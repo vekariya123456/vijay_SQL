@@ -1,19 +1,18 @@
 create table client_master(
-    CLIENTNO varchar(6) primary key,
-    NAME varchar(20) Not Null,
-    ADDRcreateESS1 varchar(30),
-    ADDRESS2 varchar(30),
-    CITY varchar(15),
-    PINCODE int,
-    STATE varchar(15),
-    BALDUE int
+    ClientNo varchar(6) primary key,
+    CName varchar(20) Not Null,
+    CAddress1 varchar(30),
+    CAddress2 varchar(30),
+    City varchar(15),
+    Pincode int,
+    CState varchar(15),
+    Baldue int
 );
 
-insert into client_master(CLIENTNO,NAME,CITY,PINCODE, STATE, BALDUE)value
-
-('C00001','ivan Bayross','Mumbai',400054,'Maharastra',15000),
-('C00002','Mamat Muzudar','Madras',780001,'Tamil Nadu',0),
-('C00003','Chaya Banker','Mumbai',400057,'Maharastra',5000),
-('C00004','Ashvini Joshi','Bamglore',560001,'Karnataka',0),
-('C00005','Hansel Colaco','Mumbai',400060,'Maharastra',2000),
-('C00006','Deepak Sharma','Manglore',560050,'Karnataka',0);
+insert into client_master(ClientNo,CName,CAddress1,CAddress2,City,Pincode,CState,Baldue) values
+('C00001','Ivan Bayross','A/14','Worli','Mumbai',400054,'Maharashtra',15000),
+('C00002','Mamta Muzumdar','B2','Chennai','Madras',780001,'Tamil Nadu',0),
+('C00003','Chhaya Bankar','D-65','Nariman','Mumbai',400057,'Maharastra',5000),
+('C00004','Ashwini Joshi','A-18','Ms','Bangalore',560001,'Karnataka',0),
+('C00005','Hansel Colaco','P-7','Bandra','Mumbai',400060,'Maharastra',2000),
+('C00006','Deepak Sharma','L9','Long Street','Mangalore',560050,'Karnataka',0);
